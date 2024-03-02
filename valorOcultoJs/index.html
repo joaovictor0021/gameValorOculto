@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Valor Oculto</title>
+</head>
+<body>
+
+    <!-- Section-1 -->
+    <section id="infoUser">
+        <div class="containerInfo">
+            <h1>Valor Oculto</h1>
+                <div class="value">
+                    <label>Username:</label>
+                    <input id="userName" type="text" maxlength="10">
+                    <p id="avisoName"></p>
+                </div>
+
+                <div class="optionsUser">
+                    <div class="fichaQuanti">
+                        <label>Inserir fichas:</label>
+                        <div class="fichasBtn">
+                            <button class="btnM" id="menos" onclick="menosBtn()">-</button>
+                            <input id="fichas" type="number" value="0">
+                            <button class="btnA" id="mais" onclick="maisBtn()">+</button>
+                        </div>
+                        <p id="avisoFicha"></p>
+                    </div>
+                    
+                    <div class="selectNivelContainer">
+                        <label>Seu nível:</label>
+                        <select id="selectNivel">
+                            <option disabled>Níveis</option>
+                            <option class="easy" value="Fácil">Fácil</option>
+                            <option class="medium" value="Médio">Médio</option>
+                            <option class="hard" value="Difícil">Difícil</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="play" onclick="infoUser()">Play</button>
+        </div>
+    </section>
+
+    
+    <!-- Section-2 -->
+    <section id="game">
+        <div class="containerGame">
+            <header>
+                <div class="nameCt">
+                    <p id="nameTxt"><span>Player: </span></p>
+                    <p id="name"> </p>
+                </div>
+                
+                <div class="nivelCt">
+                    <p id="nivelTxt"><span>Nível selecionado: </span></p>
+                    <p id="nivel"> </p>
+                </div>
+
+                <div class="chansCt">
+                    <p id="chansTxt"><span>Chances: </span></p>
+                    <p id="chans"> </p>
+                </div>
+                
+            </header>
+
+                <h2>Descubra o valor oculto!</h2>
+
+            <form id="form">
+                <input id="input" type="number">
+                <p id="info"></p>
+                <button id="btn">Tentar</button>
+            </form>
+        </div>
+    </section>
+        
+    <div id="popUpContainer">
+        <div class="popUpContent">
+            <header>
+                <p id="titleResult">Game Over</p>
+            </header>
+
+            <div class="contentResult">
+                <p id="infoResult">Suas chances acabaram! O valor oculto era </p>
+            </div>
+
+            <div class="btns">
+                <button id="moreOne" onclick="moreOneGame()">Continuar</button>
+                <button id="exit" onclick="restartGame()">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

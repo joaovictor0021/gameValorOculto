@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+body {
+    background: linear-gradient(#85858500, #00000028), url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#infoUser {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInfo {
+    width: 22rem;
+    height: auto;
+    background: #0000005b;
+    backdrop-filter: blur(2px);
+    border-radius: .8rem;
+    box-shadow: .1rem .1rem 1rem #000000ec;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.containerInfo h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: .7rem 0;
+    text-align: center;
+}
+
+.containerInfo label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #Fff;
+    margin-bottom: .15rem;
+}
+
+.containerInfo input, select {
+    width: auto;
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: .25rem;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.containerInfo .optionsUser {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.containerInfo .fichasBtn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.containerInfo .fichasBtn .btnM, .btnA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    text-align: center;
+    font-size: 1.35rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.containerInfo .fichasBtn .btnM {
+    color: #000000;
+    background: #df4cfd;
+    border: 2px solid #000000;
+    border-radius: .5rem;
+}
+
+.containerInfo .fichasBtn .btnA {
+    color: #000000;
+    background: #e1ff00;
+    border: 2px solid #000000;
+    border-radius: .5rem;
+}
+
+.containerInfo .fichasBtn input {
+    width: 3rem;
+    text-align: center;
+    font-size: 1.15rem;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.fichasBtn {
+    display: flex;
+}
+
+.value  {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.selectNivelContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectNivel select {
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.infoUsers form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#avisoName,
+#avisoFicha {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #ff0000;
+    margin-top: .25rem;
+}
+
+#play {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #323030;
+    background: #60ff3c;
+    border: 2px solid #60ff3c;
+    border-radius: .3rem;
+    margin: 2rem;
+    padding: .3rem 1rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#play:hover {
+    color: #60ff3c;
+    background: transparent;
+}
+
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.containerGame {
+    width: 22rem;
+    height: auto;
+    background: #0000005b;
+    backdrop-filter: blur(2px);
+    border-radius: .8rem;
+    box-shadow: .1rem .1rem 1rem #000000ec;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem 2rem 2rem ;
+    margin: 1rem;
+}
+
+
+
+.containerGame header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerGame header .nameCt, .chansCt, .nivelCt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: .8rem;
+    background: #ffffff9a;
+    padding: .2rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff4d00;
+}
+
+.containerGame header span {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.containerGame h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+    margin: .7rem 0 .5rem 0;
+}
+
+.containerGame form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerGame form input {
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.15rem;
+    padding: 0;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.containerGame form #info {
+    font-size: .95rem;
+    font-weight: 600;
+    text-align: center;
+    padding: .7rem 0;
+    color: #eede00;
+}
+
+.containerGame form button {
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: .3rem 2rem;
+    color: #323030;
+    background: #60ff3c;
+    border: 2px solid #60ff3c;
+    border-radius: .3rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.containerGame form button:hover {
+    color: #60ff3c;
+    background: transparent;
+}
+
+#popUpContainer {
+    min-height: 100vh;
+    width: 100%;
+    background: #000000c5;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popUpContent {
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #00000053;
+    border-radius: .8rem;
+    box-shadow: .1rem .1rem 1rem #000000;
+    margin: 1rem;
+}
+
+
+
+.popUpContent header {
+    width: 100%;
+    background: #6a5959;
+    border-radius: .8rem .8rem 0 0 ;
+    padding: .5rem 2rem;
+    border-bottom: 4px solid #3c2828;
+}
+
+.popUpContent header p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.popUpContent .contentResult p{
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: .7rem 2rem;
+}
+
+.popUpContent .btns {
+    width: 100%;
+    border-top: 4px solid #3c2828;
+    background: #6a5959;
+    border-radius:  0 0 .8rem .8rem;
+    padding: .8rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.popUpContent .btns button {
+    font-size: 1.02rem;
+    font-weight: 500;
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.popUpContent .btns #moreOne {
+    color: #fff;
+    background: #1128fb;
+    border: 2px solid #1128fb;
+    transition: all .3s;
+}
+
+.popUpContent .btns #exit {
+    color: #fff;
+    background: #fb1111;
+    border: 2px solid #fb1111;
+    transition: all .15s;
+}
+
+.popUpContent .btns button:hover {
+    opacity: .85;
+}
+
+
+@media (max-width: 340px) {
+    .containerGame header .nameCt, .chansCt, .nivelCt {
+        padding: .2rem 1rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .containerGame header span {
+        font-size: .95rem;
+        font-weight: 600;
+    }
+    
+    .containerGame form button {
+        font-size: 1.1rem;
+        padding: .25rem 2rem;
+    }
+    
+    .popUpContent .contentResult p{
+        font-size: .98rem;
+        padding: .7rem 1rem;
+    }
+
+    .popUpContent .btns button {
+        font-size: 1rem;
+        padding: .3rem .8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .containerGame header .nameCt, .chansCt, .nivelCt {
+        padding: .2rem .7rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .containerGame header span {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .containerGame form button {
+        font-size: 1.1rem;
+        padding: .2rem 1.7rem;
+    }
+
+    
+    .containerInfo h1 {
+        font-size: 1.9rem;
+        padding: 0 1.5rem;
+    }
+    
+    .containerInfo label {
+        font-size: .9rem;
+    }
+    
+    .containerInfo input, select {
+        font-size: .97rem;
+    }
+    
+    .containerInfo .optionsUser {
+        padding: 0 1.7rem;
+    }
+    
+    .containerInfo .fichasBtn {
+        gap: .25rem;
+    }
+    
+    .containerInfo .fichasBtn .btnM, .btnA{
+        font-size: 1.3rem;
+    }
+    
+    .containerInfo .fichasBtn input {
+        width: 2.7rem;
+        font-size: 1.1rem;
+    }
+
+    #avisoName,
+    #avisoFicha {
+        font-size: .85rem;
+    }
+    
+    #play {
+        font-size: 1.2rem;
+        padding: .2rem 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .containerGame header .nameCt, .chansCt, .nivelCt {
+        padding: .25rem .5rem;
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+
+    .containerGame header span {
+        font-size: .82rem;
+        font-weight: 600;
+    }
+
+    .containerGame form button {
+        font-size: 1.1rem;
+        padding: .2rem 1.7rem;
+    }
+
+    .containerGame h2 {
+        font-size: 1.28rem;
+    }
+
+    .popUpContent header p {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+
+    .popUpContent .contentResult p{
+        font-size: .87rem;
+        padding: .7rem 1rem;
+    }
+
+    .popUpContent .btns {
+        padding: .8rem .8rem;
+        gap: .8rem;
+    }
+
+    .popUpContent .btns button {
+        font-size: 1rem;
+        padding: .3rem .8rem;
+    }
+}
